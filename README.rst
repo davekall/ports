@@ -11,13 +11,11 @@ Ports
 
 I will update the status of the ports progress of inclusion into the ports tree.
 
-Current
--------
-
-* devel/py-llvmlite [*In progress*]
-* devel/py-numba    [*In progress*]
-
-Planned
--------
-* lang/hy
-* science/gsas2
+================= =========== =================
+Port              Status      Notes
+================= =========== =================
+devel/py-llvmlite In progress Awaiting approval
+devel/py-numba    In progress Awaiting approval
+lang/hy           planned
+science/gsas2     planned
+================= =========== =================
