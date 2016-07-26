@@ -19,15 +19,16 @@ USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.pre.mk>
 
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}numpy>1.7:${PORTSDIR}/math/py-numpy
+
 # Requried for Python 2.7
 .if ${PYTHON_REL} < 3400
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:${PORTSDIR}/devel/py-enum34 \
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:${PORTSDIR}/devel/py-enum34 \
 		${PYTHON_PKGNAMEPREFIX}singledispatch>0:${PORTSDIR}/devel/py-singledispatch \
 		${PYTHON_PKGNAMEPREFIX}funcsigs>0:${PORTSDIR}/devel/py-funcsigs
 .endif
 
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}llvmlite>=0.12:${PORTSDIR}/devel/py-llvmlite \
-		${PYTHON_PKGNAMEPREFIX}numpy>1.7:${PORTSDIR}/math/py-numpy \
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}llvmlite>=0.12:${PORTSDIR}/devel/py-llvmlite \
 		${PYTHON_PKGNAMEPREFIX}argparse>0:${PORTSDIR}/devel/py-argparse
 
 .include <bsd.port.post.mk>
