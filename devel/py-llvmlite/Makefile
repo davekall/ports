@@ -24,7 +24,7 @@ LLVM_VER=	37
 
 # Python 2.7 requires enum34, Python 3.4+ unecessary
 .if ${PYTHON_REL} < 3400
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:${PORTSDIR}/devel/py-enum34
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
 .endif
 
 BUILD_DEPENDS+=	llvm-config${LLVM_VER}:devel/llvm${LLVM_VER}
