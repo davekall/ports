@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	numba
-PORTVERSION=	0.27.0
+PORTVERSION=	0.28.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}llvmlite>=0.12:devel/py-llvmlite \
 		${PYTHON_PKGNAMEPREFIX}argparse>0:devel/py-argparse
 
 # Uses Python 2.7, 3.4+
-USES=		python
+USES=		python fortran
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.pre.mk>
