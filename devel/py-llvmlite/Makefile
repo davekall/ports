@@ -18,7 +18,7 @@ USES=		python fortran
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.pre.mk>
-# README claims LLVM 3.8, but 0.12.1 branch README requires LLVM 3.7.
+# README mentions llvm38 requirement for llvmlite 0.13.0
 LLVM_VER=	38
 
 # Python 2.7 requires enum34, Python 3.4+ unecessary
