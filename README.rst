@@ -14,8 +14,8 @@ I will update the status of the ports progress of inclusion into the ports tree.
 ================= =========== =================
 Port              Status      Notes
 ================= =========== =================
-devel/py-llvmlite In progress Awaiting approval
-devel/py-numba    In progress Awaiting approval
-lang/hy           planned
+devel/py-llvmlite commited    **requires update**
+devel/py-numba    commited
+lang/hy           In progress
 science/gsas2     planned
 ================= =========== =================
