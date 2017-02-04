@@ -16,6 +16,6 @@ Port              Status      Notes
 ================= =========== =================
 devel/py-llvmlite commited    **requires update**
 devel/py-numba    commited
-lang/hy           In progress
+lang/hy           submitted
 science/gsas2     planned
 ================= =========== =================
