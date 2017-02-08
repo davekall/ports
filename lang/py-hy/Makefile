@@ -1,9 +1,8 @@
-# Created by David Kalliecharan <dave@dal.ca>
+# Created by: David Kalliecharan <dave@dal.ca>
 # $FreeBSD$
 
 PORTNAME=	hy
 PORTVERSION=	0.12.1
-PORTREVISION=	1
 CATEGORIES=	lang python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,10 +13,7 @@ COMMENT=	Hy is a dialect of lisp that's is embedded in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python
-USE_PYTHON=	distutils autoplist
-
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}args>0:devel/py-args \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>0:devel/py-args \
 		${PYTHON_PKGNAMEPREFIX}astor>0:devel/py-astor \
 		${PYTHON_PKGNAMEPREFIX}clint>0:devel/py-clint \
 		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose \
@@ -25,6 +21,9 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}args>0:devel/py-args \
 		${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox \
 		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments \
 		${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx \
-		${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme \
+		${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme
+
+USES=		python
+USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>
