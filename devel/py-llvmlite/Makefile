@@ -1,5 +1,5 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-llvmlite/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD$
 
 PORTNAME=	llvmlite
 PORTVERSION=	0.14.0

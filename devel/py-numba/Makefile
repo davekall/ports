@@ -1,5 +1,5 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-numba/Makefile 428057 2016-12-07 13:24:56Z gerald $
+# $FreeBSD$
 
 PORTNAME=	numba
 PORTVERSION=	0.29.0
